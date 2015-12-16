@@ -19,6 +19,21 @@ exports.GetAll = function(callback) {
     });
 }
 
+exports.GetAllBeers = function(callback) {
+    var query = 'SELECT * FROM BeerABV';
+
+    console.log(query);
+
+    connection.query(query, function(err, result) {
+        if(err) {
+            console.log(err);
+            callback(true);
+            return;
+        }
+        callback(false, result);
+    });
+}
+
 exports.GetByID = function(brewery_id, callback) {
     console.log(brewery_id);
     var query = 'SELECT * FROM Brewery WHERE id=' + brewery_id;

@@ -1,0 +1,22 @@
+<div>
+    <% if(rs.length > 0) { %>
+    <table border="1">
+        <!-- &nbsp is HTML syntax for a space it stands for non break space -->
+        <tr><th>Name</th><th>ABV</th><th>&nbsp;</th></tr>
+        <% for (var i=0; rs.length > i; i++) { %>
+        <tr>
+            <td><a href="/beer/edit?beer_id=<%= rs[i].beer_id %>"> <%= rs[i].name %></a></td>
+            <% var ABV = rs[i].ABV; %>
+            <td><%= ABV %></td>
+            <td><a href="/beer/delete?beer_id=<%= rs[i].beer_id %>&name=<%= rs[i].name %>">Delete</a></td>
+        </tr>
+        <% } %>
+    </table>
+    <% } else { %>
+    No companies are entered into the beer database table.
+    <% } %>
+</div>
+
+<div style="margin-top:10px;">
+    <a href="/beer/create">Create New Beer</a>
+</div>

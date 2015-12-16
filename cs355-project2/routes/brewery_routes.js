@@ -12,6 +12,13 @@ router.get('/', function(req, res){
     });
 })
 
+router.get('/AllBeers', function(req, res){
+    breweryDal.GetAllBeers(function(err, result){
+        console.log(result);
+        res.render('brewery/beerandbrew_list', {rs: result});
+    });
+})
+
 
 router.get('/create', function(req, res) {
     breweryDal.GetAll(function(err, result) {
