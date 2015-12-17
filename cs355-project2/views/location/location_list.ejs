@@ -1,0 +1,22 @@
+<div>
+    <% if(rs.length > 0) { %>
+    <table border="1">
+        <!-- &nbsp is HTML syntax for a space it stands for non break space -->
+        <tr><th>Store</th><th>Address</th><th>&nbsp;</th></tr>
+        <% for (var i=0; rs.length > i; i++) { %>
+        <tr>
+            <td><a href="/location/edit?location_id=<%= rs[i].Id %>"> <%= rs[i].StoreName %></a></td>
+            <% var Address = rs[i].Address; %>
+            <td><%= Address %></td>
+            <td><a href="/location/delete?location_id=<%= rs[i].slid %>">Delete</a></td>
+        </tr>
+        <% } %>
+    </table>
+    <% } else { %>
+    No companies are entered into the location database table.
+    <% } %>
+</div>
+
+<div style="margin-top:10px;">
+    <a href="/location/create">Create New Location</a>
+</div>

@@ -1,0 +1,19 @@
+<% include ../partials/header.ejs %>
+
+<form action="./save" class="col-md-4">
+    <div class="form-group">
+        <label for="beer">Beer Name:</label>
+        <input type="text" name="beer" id="beer" value="" class="form-control" />
+    </div>
+    <label for="brewery">Brewery:</label>
+    <select id="brewery" name="brewery" class="form-control">
+        <% brewery.forEach(function(entry) { %>
+        <% var brewery = entry.name; %>
+        <option value="<%= entry.brewery_id %>"><%= brewery %></option>
+        <% }); %>
+    </select>
+
+    <br />
+    <input type="submit" />
+</form>
+<% include ../partials/footer.ejs %>

@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var beerDal = require('../dal/beer_dal');
-//var addressDal = require('../dal/location_dal');
+var breweryDal = require('../dal/brewery_dal');
 
 
 /* return a table of all the companies and their addresses */
@@ -15,7 +15,7 @@ router.get('/', function(req, res){
 
 router.get('/create', function(req, res) {
     beerDal.GetAll(function(err, result) {
-        res.render('beer/beer_create', {address : result});
+        res.render('beer/beer_create', {beer : result});
     });
 });
 
@@ -35,12 +35,12 @@ router.get('/edit', function(req, res) {
             res.render('beer/beer_edit', data);
         }
         else {
-            beerDal.GetAll(function(err, address_results) {
+            breweryDal.GetAll(function(err, brewery_results) {
 
                 console.log(beer_results);
                 var data = {
                     beer: beer_results,
-                    ABV: address_results
+                    brewery: brewery_results
                 };
                 console.log("Data is: "+ data);
                 res.render('beer/beer_edit', data);
