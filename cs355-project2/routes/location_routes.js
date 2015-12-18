@@ -12,13 +12,42 @@ router.get('/', function(req, res){
     });
 })
 
-
+/*
 router.get('/create', function(req, res) {
     locationDal.GetAll(function(err, result) {
         res.render('location/location_create', {address : result});
     });
 });
+*/
 
+router.get('/create', function(req, res) {
+    var location_id = req.query.id;
+    console.log("location_id: " + location_id);
+    locationDal.GetByID(location_id, function(err, location_results){
+
+        if(err) {
+            var alert_class = 'alert-danger';
+            var data = {
+                message: "Error retrieving location with id " + location_id + "<p>" + err + "</p>",
+                alert_class: alert_class
+            };
+            res.render('location/location_create', data);
+        }
+        else {
+            locationDal.GetAllAddress(function(err, address_results) {
+
+                console.log(address_results);
+                var data = {
+                    location: location_results,
+                    Store: address_results
+                };
+                console.log("Data is: "+ data);
+                res.render('location/location_create', data);
+            })
+        }
+    });
+
+});
 
 /* return a drop down of all the address */
 router.get('/edit', function(req, res) {
