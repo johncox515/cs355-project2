@@ -5,10 +5,10 @@
         <tr><th>Name</th><th>ABV</th><th>&nbsp;</th></tr>
         <% for (var i=0; rs.length > i; i++) { %>
         <tr>
-            <td><a href="/beer/edit?beer_id=<%= rs[i].beer_id %>"> <%= rs[i].name %></a></td>
+            <td><a href="/beer/edit?id=<%= rs[i].id %>"> <%= rs[i].name %></a></td>
             <% var ABV = rs[i].ABV; %>
             <td><%= ABV %></td>
-            <td><a href="/beer/delete?beer_id=<%= rs[i].beer_id %>&name=<%= rs[i].name %>">Delete</a></td>
+            <td><a href="/beer/delete?id=<%= rs[i].id %>&name=<%= rs[i].name %>">Delete</a></td>
         </tr>
         <% } %>
     </table>

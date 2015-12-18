@@ -51,8 +51,8 @@ exports.GetByID = function(brewery_id, callback) {
 }
 
 exports.Insert = function(brewery_info, callback) {
-    var query_data = [brewery_info.name, brewery_info.address_id];
-    var query = 'INSERT INTO Brewery (name, street, city, zip, state) VALUES (?, ?, ?, ?);'
+    var query_data = [brewery_info.breweryname, brewery_info.street, brewery_info.city, brewery_info.zip, brewery_info.state];
+    var query = 'INSERT INTO Brewery (name, street, city, zip, state) VALUES (?, ?, ?, ?, ?);'
     //NOTE: The addresses already exist we only need to save the id to the brewery table
 
     console.log(query);
@@ -68,8 +68,8 @@ exports.Insert = function(brewery_info, callback) {
     })
 }
 
-exports.Delete = function(brewery_id, callback) {
-    var query = 'DELETE FROM Brewery WHERE id = ' + brewery_id;
+exports.Delete = function(id, callback) {
+    var query = 'DELETE FROM Brewery WHERE id = ' + id;
     connection.query(query, function(err, result){
         if(err){
             console.log(err)
@@ -80,5 +80,22 @@ exports.Delete = function(brewery_id, callback) {
             callback(err, result);
         }
 
+    });
+}
+
+exports.Update = function(brewery_info, callback) {
+    var query_data = [brewery_info.street, brewery_info.city, brewery_info.zip, brewery_info.state, brewery_info.brewery_id];
+    var query = 'UPDATE Brewery SET street = ?, city = ?, zip = ?, state = ? WHERE id = ?';
+    connection.query(query, query_data, function(err, result) {
+        if(err){
+            console.log(query_data);
+            console.log(query);
+            console.log(err)
+            callback(err);
+            return;
+        }
+        else {
+            callback(err, result);
+        }
     });
 }

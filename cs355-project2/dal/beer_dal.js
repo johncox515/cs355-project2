@@ -39,11 +39,10 @@ exports.Insert = function(beer_info, callback) {
 
     console.log(beer_info);
 
-    var dynamic_query = 'INSERT INTO Beer (firstname, lastname, email, password) VALUES (' +
-        '\'' + beer_info.firstname + '\', ' +
-        '\'' + beer_info.lastname + '\', ' +
-        '\'' + beer_info.email + '\', ' +
-        '\'' + beer_info.password + '\'' +
+    var dynamic_query = 'INSERT INTO Beer (name, ABV, BrewID) VALUES (' +
+        '\'' + beer_info.beername + '\', ' +
+        '\'' + beer_info.abv + '\', ' +
+        '\'' + beer_info.breweryid + '\'' +
         ');';
 
     console.log("test");
@@ -73,3 +72,33 @@ exports.Insert = function(beer_info, callback) {
     );
 }
 
+exports.Delete = function(id, callback) {
+    var query = 'DELETE FROM Beer WHERE id=' + id;
+    connection.query(query, function(err, result){
+        if(err){
+            console.log(err)
+            callback(err);
+            return;
+        }
+        else {
+            callback(err, result);
+        }
+
+    });
+}
+exports.Update = function(beer_info, callback) {
+    var query_data = [beer_info.beername, beer_info.brewery_id, beer_info.beer_id];
+    var query = 'UPDATE Beer SET name = ?, BrewID = ? WHERE id = ?';
+    connection.query(query, query_data, function(err, result) {
+        if(err){
+            console.log(query_data);
+            console.log(query);
+            console.log(err)
+            callback(err);
+            return;
+        }
+        else {
+            callback(err, result);
+        }
+    });
+}

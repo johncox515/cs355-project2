@@ -22,7 +22,7 @@ router.get('/create', function(req, res) {
 
 /* return a drop down of all the address */
 router.get('/edit', function(req, res) {
-    var beer_id = req.query.beer_id;
+    var beer_id = req.query.id;
     console.log("beer_id: " + beer_id);
     beerDal.GetByID(beer_id, function(err, beer_results){
 
@@ -50,27 +50,25 @@ router.get('/edit', function(req, res) {
 
 });
 
-router.get('/save', function(req, res) {
-    console.log(req.query);
+router.get('/save', function(req, res, next) {
+    console.log("beer name equals: " + req.query.beername);
+    console.log("abv submitted was: " + req.query.abv);
+    console.log("the brewery id submitted was: " + req.query.breweryid);
 
-    beerDal.Insert(req.query, function(err, result) {
-        if(err) {
-            res.send('Error adding new beer.<br />' + err);
+
+
+    beerDal.Insert(req.query, function (err, result) {
+        if (err) {
+            res.send(err);
         }
         else {
-            res.send('beer Successfully Added');
+            res.send("Successfully saved the data.");
         }
     });
 })
 
 
 router.get('/update', function(req, res, next) {
-    console.log("beer name equals: " + req.query.name);
-    console.log("the beer street submitted was: " + req.query.street);
-    console.log("the beer city submitted was: " + req.query.city);
-    console.log("the beer zip submitted was: " + req.query.zip);
-    console.log("the beer_id submitted was " + req.query.beer_id);
-
 
 
     beerDal.Update(req.query, function (err, result) {
@@ -84,9 +82,9 @@ router.get('/update', function(req, res, next) {
 });
 
 router.get('/delete', function(req, res) {
-    console.log(req.query.beer_id);
+    console.log(req.query.id);
 
-    beerDal.Delete(req.query.beer_id, function(err, result) {
+    beerDal.Delete(req.query.id, function(err, result) {
         res.send(req.query.name + ' was successfully deleted.');
     });
 });

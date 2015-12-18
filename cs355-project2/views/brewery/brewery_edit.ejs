@@ -1,0 +1,16 @@
+<% include ../partials/header.ejs%>
+
+<form action="/brewery/update/">
+
+    <label for="street">Street:</label> <input type="text" id="street" value="<%= brewery[0].street %> " name="street" /><br />
+    <label for="city">City:</label> <input type="text" id="city" value="<%= brewery[0].city %> " name="city" /><br />
+    <label for="zip">Zip Code:</label> <input type="text" id="zip" value="<%= brewery[0].zip %> "name="zip" /><br />
+    <label for="state">State:</label> <input type="text" id="state" value="<%= brewery[0].state %> "name="state" /><br />
+
+    <input type="hidden" name="brewery_id" id="brewer_id" value="<%= brewery[0].id %>" />
+
+
+
+    <input type="submit" />
+</form>
+<% include ../partials/footer.ejs%>

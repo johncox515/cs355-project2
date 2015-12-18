@@ -1,0 +1,34 @@
+<% include ../partials/header.ejs %>
+
+<% if(typeof message !== 'undefined') { %>
+<div class="alert <%= alert_class %>" role="alert"><%= message %></div>
+<% } %>
+
+
+<form action="./update" class="col-md-4">
+    <div class="form-group">
+        <label for="beername">Beer Name:</label>
+        <input type="text" name="beername" id="beername" value="<%= beer[0].name %>" class="form-control" />
+    </div>
+    <label for="breweryname">Brewery Name:</label>
+    <select id="breweryname" name="breweryname">
+        <option></option>
+        <% brewery.forEach(function(entry) { %>
+        <% var brew_name = entry.name %>
+        <% var selected = "";
+            if(entry.name == brewery[0].name) {
+                selected = "selected";
+            }
+        %>
+        <option value="<%= entry.id %>" <%=selected %>><%= brew_name %></option>
+        <% }); %>
+    </select>
+
+    <input type="hidden" name="beer_id" id="beer_id" value="<%= beer[0].id %>" />
+    <input type="hidden" name="brewery_id" id="brewery_id" value="<%= brewery[0].id %>" />
+
+    <br />
+    <input type="submit" />
+</form>
+
+<% include ../partials/footer.ejs %>

@@ -22,14 +22,13 @@ router.get('/AllBeers', function(req, res){
 
 router.get('/create', function(req, res) {
     breweryDal.GetAll(function(err, result) {
-        res.render('brewery/brewery_create', {address : result});
+        res.render('brewery/brewery_create', {brewery : result});
     });
 });
 
-
 /* return a drop down of all the address */
 router.get('/edit', function(req, res) {
-    var brewery_id = req.query.brewery_id;
+    var brewery_id = req.query.id;
     console.log("brewery_id: " + brewery_id);
     breweryDal.GetByID(brewery_id, function(err, brewery_results){
 
@@ -47,7 +46,6 @@ router.get('/edit', function(req, res) {
                 console.log(brewery_results);
                 var data = {
                     brewery: brewery_results,
-                    address: address_results
                 };
                 console.log("Data is: "+ data);
                 res.render('brewery/brewery_edit', data);
@@ -76,7 +74,7 @@ router.get('/update', function(req, res, next) {
     console.log("the brewery street submitted was: " + req.query.street);
     console.log("the brewery city submitted was: " + req.query.city);
     console.log("the brewery zip submitted was: " + req.query.zip);
-    console.log("the brewery_id submitted was " + req.query.brewery_id);
+    console.log("the brewery_id submitted was " + req.query.id);
 
 
 
@@ -91,9 +89,9 @@ router.get('/update', function(req, res, next) {
 });
 
 router.get('/delete', function(req, res) {
-    console.log(req.query.brewery_id);
+    console.log(req.query.id);
 
-    breweryDal.Delete(req.query.brewery_id, function(err, result) {
+    breweryDal.Delete(req.query.id, function(err, result) {
         res.send(req.query.name + ' was successfully deleted.');
     });
 });

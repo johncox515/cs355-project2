@@ -5,10 +5,10 @@
         <tr><th>Name</th><th>Address</th><th>&nbsp;</th></tr>
         <% for (var i=0; rs.length > i; i++) { %>
         <tr>
-            <td><a href="/brewery/edit?brewery_id=<%= rs[i].brewery_id %>"> <%= rs[i].name %></a></td>
+            <td><a href="/brewery/edit?id=<%= rs[i].id %>"> <%= rs[i].name %></a></td>
             <% var address = rs[i].street + " " + rs[i].city + ", " + rs[i].zip; %>
             <td><%= address %></td>
-            <td><a href="/brewery/delete?brewery_id=<%= rs[i].brewery_id %>&name=<%= rs[i].name %>">Delete</a></td>
+            <td><a href="/brewery/delete?id=<%= rs[i].id %>&name=<%= rs[i].name %>">Delete</a></td>
         </tr>
         <% } %>
     </table>
