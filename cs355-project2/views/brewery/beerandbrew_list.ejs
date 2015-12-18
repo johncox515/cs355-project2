@@ -1,8 +1,10 @@
+<% include ../partials/header.ejs %>
+
 <div>
     <% if(rs.length > 0) { %>
     <table border="1">
         <!-- &nbsp is HTML syntax for a space it stands for non break space -->
-        <tr><th>Name</th><th>Beer Name</th><th>Beer Type</th><th>ABV</th><th>&nbsp;</th></tr>
+        <tr><th>Name</th><th>Beer Name</th><th>Beer Type</th><th>ABV</th></tr>
         <% for (var i=0; rs.length > i; i++) { %>
         <tr>
             <td><%= rs[i].BreweryName %></td> <td><%= rs[i].BeerName %> </td> <td> <%= rs[i].BeerType %> </td> <td><%= rs[i].ABV %></td>
@@ -16,3 +18,5 @@
 
 <div style="margin-top:10px;">
 </div>
+
+<% include ../partials/footer.ejs %>

@@ -5,11 +5,13 @@ var breweryDal = require('../dal/brewery_dal');
 
 
 /* return a table of all the companies and their addresses */
+
 router.get('/', function(req, res){
     beerDal.GetAll(function(err, result){
         console.log(result);
         res.render('beer/beer_list', {rs: result});
     });
+
 })
 
 
