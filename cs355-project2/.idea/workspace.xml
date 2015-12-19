@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2dc1957-c098-4574-9e99-16be9d839548" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dal/beertype_dal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/userFormCreate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/beertype_routes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/beertype/beertype_create.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/beertype/beertype_edit.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/beertype/beertype_list.ejs" />
+    <list default="true" id="a2dc1957-c098-4574-9e99-16be9d839548" name="Default" comment="Final upload. AJAX was acting up, but the code is there. User login works but globalizing the variable doesnt work as intended.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/beer_dal.js" afterPath="$PROJECT_DIR$/dal/beer_dal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/location_dal.js" afterPath="$PROJECT_DIR$/dal/location_dal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/location_routes.js" afterPath="$PROJECT_DIR$/routes/location_routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/authentication/logout.ejs" afterPath="$PROJECT_DIR$/views/authentication/logout.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/authentication/success.ejs" afterPath="$PROJECT_DIR$/views/authentication/success.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/beer/beer_create.ejs" afterPath="$PROJECT_DIR$/views/beer/beer_create.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/beer/beer_list.ejs" afterPath="$PROJECT_DIR$/views/beer/beer_list.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/location/location_create.ejs" afterPath="$PROJECT_DIR$/views/location/location_create.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/userFormCreate.js" afterPath="$PROJECT_DIR$/public/js/userFormCreate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/beer_routes.js" afterPath="$PROJECT_DIR$/routes/beer_routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/authentication/signup.ejs" afterPath="$PROJECT_DIR$/views/authentication/signup.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/location/location_edit.ejs" afterPath="$PROJECT_DIR$/views/location/location_edit.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/header.ejs" afterPath="$PROJECT_DIR$/views/partials/header.ejs" />
     </list>
     <ignored path="cs355-project2.iws" />
@@ -39,52 +30,82 @@
     <favorites_list name="cs355-project2" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="beertype_list.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/beertype/beertype_list.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="success.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/authentication/success.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beer_create.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/beer/beer_create.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
-              <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userFormCreate.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/userFormCreate.js">
+      <file leaf-file-name="location_routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/location_routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location_edit.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/location/location_edit.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4552352">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beer_edit.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/beer/beer_edit.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.0">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location_dal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dal/location_dal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="87" column="92" selection-start-line="87" selection-start-column="92" selection-end-line="87" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/authentication/signup.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/footer.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.875">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -94,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/dal/beer_dal.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+              <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -104,37 +125,7 @@
         <entry file="file://$PROJECT_DIR$/routes/beer_routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beertype_routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/beertype_routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beertype_edit.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/beertype/beertype_edit.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75">
-              <caret line="6" column="52" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="59" />
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -151,7 +142,6 @@
         <option value="$PROJECT_DIR$/dal/db_connection.js" />
         <option value="$PROJECT_DIR$/routes/brewery.js" />
         <option value="$PROJECT_DIR$/views/beer/beerFormCreate.ejs" />
-        <option value="$PROJECT_DIR$/views/location/location_edit.ejs" />
         <option value="$PROJECT_DIR$/views/beer/beer_edit.ejs" />
         <option value="$PROJECT_DIR$/views/brewery/brewery_create.ejs" />
         <option value="$PROJECT_DIR$/routes/brewery_routes.js" />
@@ -160,18 +150,13 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/brewery/brewery_list.ejs" />
         <option value="$PROJECT_DIR$/dal/user_dal.js" />
-        <option value="$PROJECT_DIR$/views/authentication/signup.ejs" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/about.ejs" />
         <option value="$PROJECT_DIR$/views/partials/footer.ejs" />
         <option value="$PROJECT_DIR$/views/location/location_list.ejs" />
         <option value="$PROJECT_DIR$/views/brewery/beerandbrew_list.ejs" />
         <option value="$PROJECT_DIR$/views/authentication/login.ejs" />
         <option value="$PROJECT_DIR$/views/partials/footer2.ejs" />
-        <option value="$PROJECT_DIR$/routes/beer_routes.js" />
-        <option value="$PROJECT_DIR$/routes/location_routes.js" />
         <option value="$PROJECT_DIR$/views/location/location_create.ejs" />
-        <option value="$PROJECT_DIR$/dal/location_dal.js" />
         <option value="$PROJECT_DIR$/views/beer/beer_list.ejs" />
         <option value="$PROJECT_DIR$/views/authentication/logout.ejs" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
@@ -184,8 +169,15 @@
         <option value="$PROJECT_DIR$/routes/beertype_routes.js" />
         <option value="$PROJECT_DIR$/views/authentication/success.ejs" />
         <option value="$PROJECT_DIR$/views/beer/beer_create.ejs" />
+        <option value="$PROJECT_DIR$/public/js/userFormCreate.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/routes/beer_routes.js" />
         <option value="$PROJECT_DIR$/dal/beer_dal.js" />
+        <option value="$PROJECT_DIR$/views/authentication/signup.ejs" />
         <option value="$PROJECT_DIR$/views/partials/header.ejs" />
+        <option value="$PROJECT_DIR$/routes/location_routes.js" />
+        <option value="$PROJECT_DIR$/views/location/location_edit.ejs" />
+        <option value="$PROJECT_DIR$/dal/location_dal.js" />
       </list>
     </option>
   </component>
@@ -377,6 +369,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs355-project2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs355-project2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -533,20 +539,26 @@
       <option name="project" value="LOCAL" />
       <updated>1450468560250</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Website now has 4 tables that are viewable editable. Fixing minor issue with beer insert. It has a double insert which is a little complicated">
+      <created>1450486079446</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1450486079446</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="31" width="1922" height="1004" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12604167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15520833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21162444" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2618262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21892188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -559,26 +571,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21162444" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2618262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12604167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -599,7 +591,9 @@
     <MESSAGE value="Got 3 of the 4 app components done" />
     <MESSAGE value="Added authentication page, and about page." />
     <MESSAGE value="Made some minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made some minor changes" />
+    <MESSAGE value="Website now has 4 tables that are viewable editable. Fixing minor issue with beer insert. It has a double insert which is a little complicated" />
+    <MESSAGE value="Final upload. AJAX was acting up, but the code is there. User login works but globalizing the variable doesnt work as intended." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final upload. AJAX was acting up, but the code is there. User login works but globalizing the variable doesnt work as intended." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -624,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,21 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="230" column="2" selection-start-line="230" selection-start-column="2" selection-end-line="230" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/beer/beer_edit.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65608466">
-          <caret line="26" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,23 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31451613">
           <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/authentication/signup.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/location/location_edit.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.625">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,15 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21774194">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,39 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11645963">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dal/user_dal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1645963">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dal/location_dal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="68" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="6" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/location_routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
           <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -832,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.25">
           <caret line="18" column="13" selection-start-line="12" selection-start-column="4" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.375">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -848,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21774194">
           <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31451613">
           <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,7 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14516129">
           <caret line="6" column="114" selection-start-line="6" selection-start-column="114" selection-end-line="6" selection-end-column="114" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
           <caret line="4" column="18" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75">
           <caret line="6" column="52" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.5">
           <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,50 +852,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+    <entry file="file://$PROJECT_DIR$/views/beer/beer_create.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/authentication/success.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/beer_routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dal/beer_dal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/beer/beer_create.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -999,7 +871,111 @@
     <entry file="file://$PROJECT_DIR$/public/js/userFormCreate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/user_dal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/authentication/signup.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/beer/beer_edit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/beer_routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/location_routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/beer_dal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/location_dal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="92" selection-start-line="87" selection-start-column="92" selection-end-line="87" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/location/location_edit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4552352">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding />
         </state>
       </provider>

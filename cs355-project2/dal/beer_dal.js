@@ -43,12 +43,13 @@ exports.Insert = function(beer_info, callback) {
         '\'' + beer_info.beername + '\', ' +
         '\'' + beer_info.abv + '\', ' +
         '\'' + beer_info.breweryid + '\'' +
-        ');' +
-        ' INSERT INTO Beer_BeerType (BeerID, BeerTypeID) VALUES (' +
+        ');';
+/*        ' INSERT INTO Beer_BeerType (BeerID, BeerTypeID) VALUES (' +
             '\'' + beer_info.beerid + '\', ' +
             '\'' + beer_info.btypeid + '\'' +
         ');'
         ;
+*/
 /*    var dynamic_query2 = 'INSERT INTO Beer_BeerType (BeerID, BeerTypeID) VALUES (' +
             '\'' + beer_info.beerid + '\', ' +
             '\'' + beer_info.btypeid + '\'' +

@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>John Cox's Beer Database</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <body>
+
+<div class="container">
+    <p align="left"><h1>Beer Database</h1></p>
+</div>
+</head>
 <% if(typeof firstname !== "undefined") { %>
 <p align="right">Welcome, <%= firstname %>     <a href="/logout/">Logout</a></p>
 
 <% } %>
-<h1>Beer Database</h1>

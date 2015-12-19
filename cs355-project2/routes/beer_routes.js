@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var beerDal = require('../dal/beer_dal');
 var breweryDal = require('../dal/brewery_dal');
+var userDal = require('../dal/user_dal');
 
 
 /* return a table of all the companies and their addresses */

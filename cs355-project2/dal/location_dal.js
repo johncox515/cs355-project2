@@ -90,6 +90,7 @@ exports.Update = function(company_info, callback) {
     connection.query(query, query_data, function(err, result) {
         if(err){
             console.log(err)
+            console.log(query)
             callback(err);
             return;
         }
