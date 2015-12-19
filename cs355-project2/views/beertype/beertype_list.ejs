@@ -1,0 +1,24 @@
+<%include ../partials/header.ejs%>
+
+<div>
+    <% if(rs.length > 0) { %>
+    <table border="1">
+        <!-- &nbsp is HTML syntax for a space it stands for non break space -->
+        <tr><th>Name</th><th>&nbsp;</th></tr>
+        <% for (var i=0; rs.length > i; i++) { %>
+        <tr>
+            <td><a href="/beertype/edit?id=<%= rs[i].id %>"> <%= rs[i].name %></a></td>
+            <td><a href="/beertype/delete?id=<%= rs[i].id %>&name=<%= rs[i].name %>">Delete</a></td>
+        </tr>
+        <% } %>
+    </table>
+    <% } else { %>
+    No companies are entered into the brewery database table.
+    <% } %>
+</div>
+
+<div style="margin-top:10px;">
+    <a href="/beertype/create">Create New Beer Type</a>
+</div>
+
+<%include ../partials/footer.ejs%>

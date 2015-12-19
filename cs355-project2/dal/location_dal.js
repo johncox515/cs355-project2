@@ -52,7 +52,7 @@ exports.GetByID = function(location_id, callback) {
 }
 
 exports.Insert = function(location_info, callback) {
-    var query_data = [location_info.address, location_info.store_id];
+    var query_data = [location_info.Address, location_info.storename];
     var query = 'INSERT INTO StoreLocations (address, StoreID) VALUES (?, ?);'
     //NOTE: The addresses already exist we only need to save the id to the location table
 

@@ -2,9 +2,18 @@
 
 <form action="/beer/save/">
 
-    <label for="companyname">Beer Name:</label> <input type="text" id="beername" name="beername" /><br />
+    <%var index = 0; %>
+    <label for="beername">Beer Name:</label> <input type="text" id="beername" name="beername" /><br />
     <label for="abv">ABV:</label> <input type="text" id="abv" name="abv" /><br />
     <label for="breweryid">Brewery ID:</label> <input type="breweryid" id="breweryid" name="breweryid" /><br />
+    <label for="beertype">Beer Type:</label>
+    <select id="btypename" name="btypename">
+        <% for(var i=0; beer.length > i; i++) { %>
+        <option value="<%= beer[i].BeerTypeID %>"><%= beer[i].btypename %></option>
+        <% } %>
+    </select>
+    <input type="hidden" name="beerid" id="beerid" value="<%= beer[index].BeerID %>" />
+    <input type="hidden" name="btypeid" id="btypeid" value="<%= beer[index].BeerTypeID %>" />
 
     <input type="submit" />
 </form>

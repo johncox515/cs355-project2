@@ -5,7 +5,7 @@ var db  = require('./db_connection.js');
 var connection = mysql.createConnection(db.config);
 
 exports.GetAll = function(callback) {
-    connection.query('SELECT b.id AS BeerID, b.name AS bname, b.abv AS ABV, bt.name AS btypename, bt.id AS BeerTypeID FROM Beer b JOIN Beer_BeerType bbt ON b.id = bbt.BeerID JOIN BeerType bt ON bt.id = bbt.BeerTypeID;',
+    connection.query('SELECT * FROM BeerType',
         function (err, result) {
             if(err) {
                 console.log(err);
@@ -21,7 +21,7 @@ exports.GetAll = function(callback) {
 
 exports.GetByID = function(beer_id, callback) {
     console.log(beer_id);
-    var query = 'SELECT * FROM Beer WHERE id=' + beer_id;
+    var query = 'SELECT * FROM BeerType WHERE id=' + beer_id;
     console.log(query);
     connection.query(query,
         function (err, result) {
@@ -39,21 +39,10 @@ exports.Insert = function(beer_info, callback) {
 
     console.log(beer_info);
 
-    var dynamic_query = 'INSERT INTO Beer (name, ABV, BrewID) VALUES (' +
-        '\'' + beer_info.beername + '\', ' +
-        '\'' + beer_info.abv + '\', ' +
-        '\'' + beer_info.breweryid + '\'' +
-        ');' +
-        ' INSERT INTO Beer_BeerType (BeerID, BeerTypeID) VALUES (' +
-            '\'' + beer_info.beerid + '\', ' +
-            '\'' + beer_info.btypeid + '\'' +
-        ');'
-        ;
-/*    var dynamic_query2 = 'INSERT INTO Beer_BeerType (BeerID, BeerTypeID) VALUES (' +
-            '\'' + beer_info.beerid + '\', ' +
-            '\'' + beer_info.btypeid + '\'' +
-            ');'
-*/        ;
+    var dynamic_query = 'INSERT INTO BeerType (name) VALUES (' +
+            '\'' + beer_info.beertypename + '\'' +
+            ');';
+
     console.log("test");
     console.log(dynamic_query);
 
@@ -71,25 +60,10 @@ exports.Insert = function(beer_info, callback) {
             callback(false, result);
         }
     );
-/*
-    connection.query(dynamic_query2,
-        function (err, result) {
-
-            // if the err parameter isn't null or 0, then it will run the code within the if statement
-            if(err) {
-
-                console.log(err);
-                callback(true);
-                return;
-            }
-            callback(false, result);
-        }
-    );
-*/
 }
 
 exports.Delete = function(id, callback) {
-    var query = 'DELETE FROM Beer WHERE id=' + id;
+    var query = 'DELETE FROM BeerType WHERE id=' + id;
     connection.query(query, function(err, result){
         if(err){
             console.log(err)
@@ -103,8 +77,8 @@ exports.Delete = function(id, callback) {
     });
 }
 exports.Update = function(beer_info, callback) {
-    var query_data = [beer_info.beername, beer_info.brewery_id, beer_info.beer_id];
-    var query = 'UPDATE Beer SET name = ?, BrewID = ? WHERE id = ?';
+    var query_data = [beer_info.beertypename, beer_info.beertype_id];
+    var query = 'UPDATE BeerType SET name = ? WHERE id = ?';
     connection.query(query, query_data, function(err, result) {
         if(err){
             console.log(query_data);

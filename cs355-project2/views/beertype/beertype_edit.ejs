@@ -1,0 +1,13 @@
+<% include ../partials/header.ejs%>
+
+<form action="/beertype/update/">
+
+    <label for="beertypename">Beer Type Name:</label> <input type="text" id="beertypename" value="<%= beertype[0].name %> " name="beertypename" /><br />
+
+    <input type="hidden" name="beertype_id" id="beertype_id" value="<%= beertype[0].id %>" />
+
+
+
+    <input type="submit" />
+</form>
+<% include ../partials/footer.ejs%>

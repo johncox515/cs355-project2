@@ -4,10 +4,12 @@
     <% if(rs.length > 0) { %>
     <table border="1">
         <!-- &nbsp is HTML syntax for a space it stands for non break space -->
-        <tr><th>Name</th><th>ABV</th><th>&nbsp;</th></tr>
+        <tr><th>Name</th><th>Beer Type</th><th>ABV</th><th>&nbsp;</th></tr>
         <% for (var i=0; rs.length > i; i++) { %>
         <tr>
-            <td><a href="/beer/edit?id=<%= rs[i].id %>"> <%= rs[i].name %></a></td>
+            <td><a href="/beer/edit?id=<%= rs[i].BeerID %>"> <%= rs[i].bname %></a></td>
+            <% var BeerType = rs[i].btypename; %>
+            <td><%= BeerType %></td>
             <% var ABV = rs[i].ABV; %>
             <td><%= ABV %></td>
             <td><a href="/beer/delete?id=<%= rs[i].id %>&name=<%= rs[i].name %>">Delete</a></td>

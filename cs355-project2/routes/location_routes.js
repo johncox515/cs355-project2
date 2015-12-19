@@ -12,16 +12,16 @@ router.get('/', function(req, res){
     });
 })
 
-/*
-router.get('/create', function(req, res) {
-    locationDal.GetAll(function(err, result) {
-        res.render('location/location_create', {address : result});
-    });
-});
-*/
 
 router.get('/create', function(req, res) {
-    var location_id = req.query.id;
+    locationDal.GetAllAddress(function(err, result) {
+        res.render('location/location_create', {Store : result});
+    });
+});
+
+/*
+router.get('/create', function(req, res) {
+    var location_id = req.query.location_id;
     console.log("location_id: " + location_id);
     locationDal.GetByID(location_id, function(err, location_results){
 
@@ -34,12 +34,12 @@ router.get('/create', function(req, res) {
             res.render('location/location_create', data);
         }
         else {
-            locationDal.GetAllAddress(function(err, address_results) {
+            locationDal.GetAllAddress(function(err, store_results) {
 
                 console.log(address_results);
                 var data = {
-                    location: location_results,
-                    Store: address_results
+                    Location: location_results,
+                    Store: store_results
                 };
                 console.log("Data is: "+ data);
                 res.render('location/location_create', data);
@@ -48,7 +48,7 @@ router.get('/create', function(req, res) {
     });
 
 });
-
+*/
 /* return a drop down of all the address */
 router.get('/edit', function(req, res) {
     var location_id = req.query.location_id;
